@@ -1,0 +1,157 @@
+
+/* -------- Overarching Classes -------- */
+
+body {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    background-color: rgb(20, 20, 20);
+}
+
+br {
+    display: block;
+    margin-bottom: 15pt;
+
+    /* Clears default height*/
+    content: "";
+}
+
+a {
+    text-decoration: none;
+    color: rgb(70, 200, 210)
+}
+
+a:hover {
+    color: rgb(49, 151, 157);
+}
+
+.padded {
+    padding: 80px 180px 80px 180px
+}
+
+/* Specifications for mobiles */
+@media (max-width: 1000px) {
+    .padded {
+        padding: 50px 50px 50px 50px
+    }
+}
+
+
+
+/* -------- Menu Header -------- */
+
+.navbar-title {
+    color: white;
+    text-decoration: none;
+  }
+
+#mainNav {
+    border-bottom: none;
+    background-color: transparent;
+    transition: background-color 1s ease-in-out;
+    z-index: 9999;
+    position: fixed;
+}
+
+img#navbar-logo {
+height: 40px;
+padding-right: 10pt;
+}
+
+.navbar-fixed-top {
+width: 100%;
+top: 0;
+position: fixed;
+position: -webkit-sticky;
+width: 100%;
+}
+
+#mainNav.solid-background {
+  background-color: rgb(0, 0, 0);
+}
+
+
+
+/* ------- Banner ---------- */
+
+
+#about-arrow{
+    opacity: 1;
+    transition: visibility 0.5s, opacity 0.5s linear;
+}
+#about-arrow.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+
+/* --------- Portfolio ---------*/
+  
+.carousel-item:after {
+    z-index: 0;
+    content:"";
+    display:block;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background: linear-gradient(0deg, rgba(0,0,0,1), rgba(0,0,0,0));
+}
+
+.carousel-caption {
+    z-index: 1;
+}
+
+
+
+/* ---------- About Us --------- */
+#portfolio {
+    background: 
+                url('/img/background/roman-art.jpg');
+    background-position: top center;
+    background-size: cover;
+}
+
+
+
+/* h1, h2, h3, h4, h5, h6 {
+font-family: 'Raleway', sans-serif;
+} */
+
+h1 {
+size: 50pt;
+font-weight: bold;
+}
+
+h2 {
+size: 30pt;
+font-weight: 300;
+}
+
+h3 {
+size: 20pt;
+font-weight: 100;
+font-style: italic;
+}
+
+h4 {
+size: 15pt;
+font-style: italic;
+}
+
+h5 {
+size: 12pt;
+font-style: italic;
+}
+
+h6 {
+size: 10pt;
+font-style: italic;
+}
+
+
+
+
+
+
