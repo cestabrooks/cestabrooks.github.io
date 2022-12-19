@@ -1,0 +1,902 @@
+<!-- Developed with Bootstrap 5.1.3 -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap 5.1.3 Stylesheet from CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"
+        onerror="this.onerror=null; this.href='lib/bootstrap/css/bootstrap.min.css';" />
+    <!-- In the event the CDN is unavailable, make one attempt to load in the local Bootstrap CSS file (the null helps avoid an infinte loop if the local file happens to be missing)  -->
+
+    <!-- Custom style sheet -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- Google Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Font Awesome 4.7.0 (used for Email and LinkedIn icons) -->
+    <link href="lib/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <title>Queen's Space Conference</title>
+    <link rel="icon" type="image/x-icon" href="img/logos/qsc_icon.ico" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+</head>
+
+<body id="page-top" href="#top">
+    <!-- Menu -->
+    <nav id="mainNav" class="navbar navbar-expand-sm navbar-dark navbar-fixed-top">
+        <!-- Container for the navigation bar -->
+        <div class="container">
+            <a href="#page-top" class="navbar-title">
+                <img id="navbar-logo" src="img/logos/qsc_logo_letters.png" class="d-inline-block align-text-middle">
+                <!-- Queen's Space Conference -->
+            </a>
+            
+            <!-- Adding a menu toggle button for smaller screens -->
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- All the options in the navigation bar (which will, if necessary, collapse into the toggle button on smaller screens) -->
+            <div class="collapse navbar-collapse" id="navbar-menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#top" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#tickets" class="nav-link">Tickets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#speakers" class="nav-link">Speakers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#schedule" class="nav-link">Schedule</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#sponsorship" class="nav-link">Sponsorship</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#team" class="nav-link">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="resources/space-game-2022/" class="nav-link">Space Game</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Banner with image -->
+    <section id="banner" style="overflow: hidden;">
+
+        <div class="banner-image d-flex justify-content-center align-items-center">
+            
+            <!-- particles.js stuff -->
+            <div id="particles-js" class="landing-container fadeIn">
+                <canvas class="particles-js-canvas-el" style="position: relative; width: 100%; height: 100%; overflow: hidden;"></canvas>
+            </div>
+            <!-- particles.js scripts -->
+            <script src="lib/particles/particles.js"></script>
+            <script src="lib/particles/particles-app.js"></script>
+            <!-- END particles.js -->
+
+
+            <div class="content text-center" style="position: absolute; z-index: 0;">
+                <h1>Queen's Space Conference</h1>
+                <h2>Sustaining Space for the Future</h1>
+                <h5 style="padding: 15pt 0 15pt 0;">February 4th - 6th, 2022</h4>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- About Us -->
+    <section id="about" href="#about">
+        <div class="container-fluid padded">
+            <div class="row">
+              <div class="col">
+                <h1>About</h1>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <h2>What is QSC?</h2>
+                <p> 
+                    The conference is centered around a series of exciting talks, innovative workshops, and networking
+                    opportunities. We strive to bring together industry professionals in order to provide delegates with the most
+                    informative, inspiring, and memorable conference possible. QSC is about sparking thought and
+                    idea-generation, raising awareness of the space industry, and piquing the interest in space for the future
+                    generation.
+                </p>
+      
+              </div>
+              <div class="col-md-6">
+                <h2>Sustaining Space for the Future</h2>
+                <p>
+                    What milestones have we achieved so far in developing an understanding of space? How much of the great unknown 
+                    have we actually explored? How do we ensure our desire for exploration is sustainable? Where will the future of 
+                    space take us, and what's in store for the next generation? Join us at QSC 2022 to help get some answers! This 
+                    year, the conference will take place virtually from February 4th - 6th. Sign up now and come join us for an out 
+                    of this world experience!
+                </p>
+              </div>
+              <div class="col-md-6">
+                <h2>COVID-19 Implications</h2>
+                <p>
+                    Due to the ongoing pandemic and the rise of cases nation-wide, QSC 2022 will now take place virtually. 
+                    <b><i>Please note that the confernece date has been moved to Feburary 4th - 6th.</i></b> 
+                </p>
+              </div>
+              <div class="col-md-6">
+                <h2>QSC Taster</h2>
+                <p>
+                    The taster is an event hosted every fall to give you a taste of the upcoming conference. This years taster 
+                    has already past. Please check our website to stay up to date with all info!
+                </p>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <!-- Tickets -->
+    <section id="tickets" href="tickets">
+        <div class="container-fluid padded">
+            <h1>Tickets</h1>
+            <p>
+                <!-- Want to purchase tickets? We are so excited you're coming! Click the button to reserve your spot. -->
+                We are no longer selling tickets for QSC 2022. Please <a href="mailto:a.lee@qsconference.com">email us</a> if you have any questions.
+            </p>
+            <!-- Wrapping in another div to prevent button from stretching the whole width -->
+            <div>
+                <!-- ORIGINAL BUTTON -->
+                <!-- <a class="btn btn-primary d-inline-flex justify-content-center align-content-between" href="https://forms.gle/zLTWozKh5T99euKZ7">
+                    <i style="padding: 0 5pt 0 0;" class="material-icons mr-1">local_activity</i> 
+                    <span>GET TICKETS</span>
+                </a> -->
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Speakers -->
+    <section id="speakers" href="speakers">
+        <div class="container-fluid padded">
+            <div class="row justify-content-center text-center seperating-row">
+                <div class="col">
+                    <h1>Speakers</h1>
+                </div>
+            </div>
+            
+            <div class="row justify-content-center text-center seperating-row">
+                <div class="col-sm-4 speaker">
+                    <img src="img/compressed-speaker-headshots/holly-ridings.jpg" class="headshot img-fluid">
+                    <p class="name">Holly Elizabeth Ridings</p>
+                    <p class="title">Flight Director Chief</p>
+                    <p class="employer">NASA</p>
+    
+                    <!-- Button to trigger modal (pop-up window) with speaker bios inside -->
+                    <div style="padding: 10pt;">
+                        <button type="button" class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#h-ridings">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 speaker">
+                    <img src="img/compressed-speaker-headshots/dr-perry-johnson-green.jpg" class="headshot img-fluid">
+                    <p class="name">Dr. Perry Johnson-Gree</p>
+                    <p class="title">Senior Program Scientist</p>
+                    <p class="employer">Canadian Space Agency</p>
+                    
+                    <!-- Button to trigger modal (pop-up window) with speaker bios inside -->
+                    <div style="padding: 10pt;">
+                        <button type="button" class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#dr-perry">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center text-center seperating-row">
+                <div class="col-sm-4 speaker">
+                    <img src="img/compressed-speaker-headshots/dr-eve-lee.jpg" class="headshot img-fluid">
+                    <p class="name">Dr. Eve J. Lee</p>
+                    <p class="title">Assistant Professor</p>
+                    <p class="employer">McGill University</p>
+
+                    <!-- Button to trigger modal (pop-up window) with speaker bios inside -->
+                    <div style="padding: 10pt;">
+                        <button type="button" class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#dr-lee">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 speaker">
+                    <img src="img/compressed-speaker-headshots/melissa-cass.jpg" class="headshot img-fluid">
+                    <p class="name">Melissa Cass</p>
+                    <p class="title">Director of Business Operations</p>
+                    <p class="employer">MDA</p>
+
+                    <!-- Button to trigger modal (pop-up window) with speaker bios inside -->
+                    <div style="padding: 10pt;">
+                        <button type="button" class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#m-cass">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+
+                
+                <div class="col-sm-4 speaker">
+                    <img src="img/compressed-speaker-headshots/dr-kelly.jpg" class="headshot img-fluid">
+                    <p class="name">Dr. Jonathan Kelly</p>
+                    <p class="title">Associate Professor</p>
+                    <p class="employer">University of Toronto</p>
+
+                    <!-- Button to trigger modal (pop-up window) with speaker bios inside -->
+                    <div style="padding: 10pt;">
+                        <button type="button" class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#dr-kelly">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 speaker">
+                    <img src="img/compressed-speaker-headshots/dr-madhavacheril.jpg" class="headshot img-fluid">
+                    <p class="name">Dr. Mathew Madhavacheril</p>
+                    <p class="title">P. J. E. Peebles Fellow</p>
+                    <p class="employer">Perimeter Institute</p>
+
+                    <!-- Button to trigger modal (pop-up window) with speaker bios inside -->
+                    <div style="padding: 10pt;">
+                        <button type="button" class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#dr-madhavacheril">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 speaker">
+                    <img src="img/compressed-speaker-headshots/dr-schutz.jpg" class="headshot img-fluid">
+                    <p class="name">Dr. Katelin Schutz</p>
+                    <p class="title">Assistant Professor</p>
+                    <p class="employer">McGill University</p>
+
+                    <!-- Button to trigger modal (pop-up window) with speaker bios inside -->
+                    <div style="padding: 10pt;">
+                        <button type="button" class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#dr-schutz">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Modal (pop-up windows) that hold speaker bios -->
+
+            <div class="modal fade" id="h-ridings" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title">Holly Elizabeth Ridings</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="me-auto bio"> 
+                                Holly Ridings, currently the Flight Director Chief at NASA, has received numerous honors and awards including two NASA 
+                                Outstanding Leadership Medals, NADA Exceptional Service Medal, and the Rotary National Award for Space Achievement.
+                                She started her NASA career as an ISS flight controller in the THOR. She was the Lead Flight Director for Expedition 16, 
+                                STS-127, and the first SpaceX Dragon mission to ISS.  As the Expedition 16 lead, she was responsible for the ISS 
+                                crew during STS-120, STS-122, STS-123, and the first ATV mission. As the STS-127 lead, she was responsible for the 
+                                addition of the Japanese Exposed Facility and the External Platform to the ISS over the course of a 16-day mission that 
+                                included 5 EVAs. As the NASA lead for the Dragon Demo mission to ISS, she overlooked the safety of ISS and the ISS crew 
+                                during the arrival of the first commercial vehicle at ISS including the final decision for rendezvous and capture.  
+                                She served as the Flight Director Office Assistant for ISS and Visiting Vehicles before selection as the Deputy 
+                                Chief of the Flight Director Office in the fall of 2014.  Prior to being selected as a Flight Director, she was 
+                                the lead for the ISS ADCO (Attitude Determination and Control) group.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="dr-perry" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title">Dr. Perry Johnson-Green</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="me-auto bio"> 
+                                Dr. Johnson-Green currently manages the Health and Life Sciences group, at the Canadian Space Agency. 
+                                He obtained his M.Sc from Queen’s University in 1988, under the supervision of Dr. Adele Crowder in the 
+                                Dept. of Biology, and his Ph.D. from the University of Manitoba in 1994. Before joining the CSA, he was 
+                                a member of the faculty of Acadia University, carrying out research on the ecology of plant-fungal 
+                                interactions, and on the prevention of food spoilage using bio-products. Dr. Johnson-Green manages the 
+                                selection and coordinates the implementation of Canadian experiments on the International Space Station. 
+                                He has shepherded the completion of 37 studies on the International Space Station. He is currently the 
+                                Co-Chair of the International Space Life Sciences Working Group and represents the CSA on the Multilateral 
+                                Human Research Panel for Exploration and the Human Research Multilateral Review Board (the Research Ethics 
+                                Board of the International Space Station). 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="dr-lee" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title">Dr. Eve J. Lee</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="me-auto bio"> 
+                                Dr. Eve J. Lee (she/her) is an Assistant Professor of Physics and a William Dawson Scholar at McGill 
+                                University. Using a variety of theoretical tools, her research aims to uncover the origin of diversity in 
+                                planetary systems: to understand what we have observed and to predict what we may discover through future 
+                                missions. Dr. Lee received her Hon. BSc in Astronomy and Physics at the University of Toronto, PhD in 
+                                Astrophysics at UC Berkeley, and was a Sherman Fairchild Postdoctoral Scholar in Theoretical 
+                                Physics/Astrophysics at Caltech until 2019 when she moved back to her home country to take up a faculty 
+                                position at McGill. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="m-cass" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title">Melissa Cass</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="me-auto bio"> 
+                                Melissa Cass is a systems, operations and safety engineering professional with an EngPhys’99 degree from 
+                                Queen’s University and Masters degrees focused in Aviation Safety & Accident Investigation and Space Science, 
+                                from Embry-Riddle Aeronautical University.  In her 20+ year career in MDA, Canada’s largest space company, 
+                                she has worked in many fields including systems engineering, safety engineering, quality and management.  As 
+                                the Director of Safety & Mission Assurance she leads a staff of skilled safety and reliability engineers, 
+                                quality and product assurance engineers to define, analyze and validate the design and development of safety 
+                                critical space robotics systems like the Canadarm and Space Station Canadarm2.   Now as Director of Business 
+                                Operations, she uses her cross-functional operations experience to lead company-wide operations projects that 
+                                enable the simplification and modernization of processes and tools. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="dr-kelly" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title">Dr. Jonathan Kelly</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="me-auto bio"> 
+                                Prof. Jonathan Kelly leads the Space & Terrestrial Autonomous Robotic Systems (STARS) Laboratory at the 
+                                University of Toronto Institute for Aerospace Studies, where his group carries out research at the nexus of 
+                                sensing, planning, and control, with an emphasis on problems related to perception, representation, and 
+                                understanding of the world. Prior to joining the University of Toronto, he was a postdoctoral fellow in the 
+                                Computer Science and Artificial Intelligence Laboratory at MIT. Prof. Kelly received his PhD and MS degrees 
+                                from the University of Southern California, and his MSc and BSc degrees from the University of Alberta. Before 
+                                starting graduate school, he was a Software Engineer in the Space Technologies division of the Canadian Space 
+                                Agency. In his spare time, he loves to scuba dive, which is as close as he's come (so far) to being weightless. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="dr-madhavacheril" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title">Dr. Mathew Madhavacheril</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="me-auto bio"> 
+                                Dr. Mathew Madhavacheril researcher tackling questions in cosmology. He’s currently the P. J. E. Peebles 
+                                Postdoctoral Fellow at the Centre for the Universe, Perimeter Institute, and he’ll be starting as an Assistant 
+                                Professor at the University of Southern California in August 2022. He was previously a Postdoctoral Research 
+                                Associate at the Department of Astrophysical Sciences at Princeton University, with his PhD thesis at Stony 
+                                Brook University focused on constraining Dark Energy using the technique of Gravitational Lensing. He’s 
+                                primarily involved with the Atacama Cosmology Telescope (ACT) collaboration, a wonderful group of people who 
+                                operate and analyze data from a microwave telescope in the Atacama Desert in Chile. This telescope measures 
+                                radiation left over from the hot, dense past of the Universe. They’re now gearing up for a bigger project -- 
+                                the Simons Observatory -- which will bring new insights into the very early universe, neutrinos, dark matter 
+                                and dark energy.  
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal fade" id="dr-schutz" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title">Dr. Katelin Schutz</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="me-auto bio"> 
+                                Prof Katelin Schutz explores astrophysical manifestations of physics beyond the Standard Model. Her group research 
+                                interests are at the intersection of astrophysics, particle physics and cosmology. Their main goal is to extract as 
+                                much information as possible about what the Universe is made of by considering how astrophysical systems would be 
+                                affected with the addition of undiscovered particles and interactions. A major focus of their research is 
+                                understanding the composition and behavior of dark matter, also interested in other extensions of the Standard Model. 
+                                While primarily theorists, they do occasionally get into the data when it is available. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Schedule -->
+    <section id="schedule" href="schedule">
+        <div class="container-fluid padded">
+            <h1>Schedule</h1>
+            <p>
+                <!-- Want to purchase tickets? We are so excited you're coming! Click the button to reserve your spot. -->
+                The conference schedule can be found in your delegate handbook. Please check your emails or re-download the file below. 
+            </p>
+
+            <!-- <div class="row justify-content-center text-center">
+                <form method="get" action="resources/QSC-?????????????.pdf">
+                    <button class = "btn btn-disabled d-inline-flex justify-content-center align-content-between">
+                        <i style="padding: 0 5pt 0 0;" class="material-icons mr-1">download</i> 
+                        <span>QSC 2022 Schedule</span>
+                    </button>
+                </form>
+            </div> -->
+            <div class="row justify-content-center text-center seperating-row">
+                <form method="get" action="resources/Space-Junkies-2022.pdf">
+                  <button class = "btn btn-light d-inline-flex justify-content-center align-content-between">
+                        <i style="padding: 0 5pt 0 0;" class="material-icons mr-1">download</i> 
+                        <span>QSC 2022 Delegate Handbook</span>
+                  </button>
+                </form>
+            </div>
+
+            <div class="row justify-content-center text-center">
+                <form method="get" action="resources/QSC-2022-Schedule.pdf">
+                  <button class = "btn btn-outline-light btn-sm d-inline-flex justify-content-center align-content-between">
+                        <i style="padding: 0 5pt 0 0;" class="material-icons mr-1">download</i> 
+                        <span>QSC 2022 Schedule ONLY</span>
+                  </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Sponsors -->
+    <section id="sponsorship" href="sponsorship">
+        <div class="container-fluid padded">
+            <div class="row justify-content-center text-center">
+                <div class="col">
+                    <h1>Our Sponsors</h1>
+                </div>
+            </div>
+
+            <div class="row justify-content-center text-center" style="vertical-align: middle;">
+                <div class="col-sm-4 my-auto">
+                    <a href="https://www.ghgsat.com/en/">
+                        <img src = "img/sponsors/ghgsat.png" class="img-fluid img-grow company-logo">
+                    </a>
+                </div>
+                <div class="col-sm-4 my-auto">
+                    <a href="https://www.mackinnonbrewing.com/">
+                        <img src = "img/sponsors/mackinnon-brothers-brewing-company.png" class="img-fluid img-grow company-logo">
+                    </a>
+                </div>
+                <div class="col-sm-4 my-auto">
+                    <a href = "https://spearheadbeer.com/">
+                        <img src = "img/sponsors/spearhead-brewing.png" class="img-fluid img-grow company-logo">
+                    </a>
+                </div>
+                <div class="col-sm-4 my-auto">
+                    <a href = "https://www.htctw.org/">
+                        <img src = "img/sponsors/how-to-change-the-world.png" class="img-fluid img-grow company-logo">
+                    </a>
+                </div>
+                <div class="col-sm-4 my-auto">
+                    <a href = "https://www.heyyallsoutherntea.com/">
+                        <img src = "img/sponsors/hey-yall.png" class="img-fluid img-grow company-logo">
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="row justify-content-center text-center">
+                <div class="col">
+                  <h3>Interested in Sponsoring QSC?</h3>
+                </div>
+                <p> Sponsoring QSC 2022 brings you lots of great benefits! Please email any one of us 
+                    listed in the sponsorship package. Click the button below to download the package.
+                    We can't wait to meet you!
+                </p>
+
+                <div class="row justify-content-center text-center">
+                    <form method="get" action="resources/QSC-Sponsorship-Package-2022-Online.pdf">
+                      <button class = "btn btn-light d-inline-flex justify-content-center align-content-between">
+                            <i style="padding: 0 5pt 0 0;" class="material-icons mr-1">download</i> 
+                            <span>QSC 2022 Sponsorship Package</span>
+                      </button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    
+
+     <!------ Team ------>
+     <section id="team" href="team">
+        <div class="container-fluid padded">
+            <div class="row justify-content-center text-center">
+                <div class="col-auto">
+                    <h1>Our Team</h1>
+                </div>
+            </div>
+  
+            <!-- Co-Chairs -->
+            <div class="row justify-content-center text-center seperating-row">
+                <!-- Abby -->
+                <div class="col-sm-4 subteam">
+                    <img src = "img/compressed-headshots/abigaillee.jpg" class="headshot img-fluid">
+                    <div class="name">Abigail Lee</div>
+                        <div class="position">
+                            <i>Co-Chair</i>
+                        </div>
+                        <div class = "contact-links">
+                            <!-- <a href = "mailto:@qsconference.com"><i class = "fa fa-envelope fa-2x hvr-grow" ></i></a> -->
+                            <a href = "https://www.linkedin.com/in/abigail-lee-0a1125205/" style = "padding-left: 10px;"><i class = "fa fa-linkedin fa-2x"></i></a>
+                        </div>
+                    </div>
+                <!-- Drew -->
+                <div class="col-sm-4 subteam">
+                    <img src = "img/compressed-headshots/drewcrix.jpg" class="headshot img-fluid">
+                    <div class="name">Drew Crix</div>
+                    <div class="position">
+                        <i>Co-Chair</i>
+                    </div>
+                    <div class = "contact-links">
+                        <!-- <a href = "mailto:@qsconference.com"><i class = "fa fa-envelope fa-2x hvr-grow"></i></a> -->
+                        <a href = "https://ca.linkedin.com/in/drewcrix" style = "padding-left: 10px;"><i class = "fa fa-linkedin fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Speakers -->
+            <div class="row justify-content-center text-center">
+                <div class="col-auto subteam">
+                    <h2>Speakers Team</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center text-center seperating-row">
+                <!-- Isabelle -->
+                <div class="col-sm-4 subteam">
+                    <img src = "img/compressed-headshots/isabellethierrin.jpg" class="headshot img-fluid">
+                    <div class="name">Isabelle Thierrin</div>
+                        <div class="position">
+                            <i>Speakers Director</i>
+                        </div>
+                        <div class = "contact-links">
+                            <a href = "mailto:isabelle.thierrin@qsconference.com"><i class = "fa fa-envelope fa-2x hvr-grow" ></i></a>
+                            <!-- <a href = "https://www.linkedin.com/" style = "padding-left: 10px;"><i class = "fa fa-linkedin fa-2x hvr-grow"></i></a> -->
+                        </div>
+                    </div>
+                <!-- Liz -->
+                <div class="col-sm-4 subteam">
+                    <img src = "img/compressed-headshots/lizuchida.jpg" class="headshot img-fluid">
+                    <div class="name">Liz Uchida</div>
+                    <div class="position">
+                        <i>Speakers Coordinator</i>
+                    </div>
+                    <div class = "contact-links">
+                        <!-- <a href = "mailto:@qsconference.com"><i class = "fa fa-envelope fa-2x hvr-grow"></i></a> -->
+                        <!-- <a href = "https://www.linkedin.com/in/harris-cornett" style = "padding-left: 10px;"><i class = "fa fa-linkedin fa-2x hvr-grow"></i></a> -->
+                    </div>
+                </div> 
+                <!-- Molly -->
+                <div class="col-sm-4 subteam">
+                    <img src = "img/compressed-headshots/mollymcgill.jpg" class="headshot img-fluid">
+                    <div class="name">Molly McGill</div>
+                    <div class="position">
+                        <i>Speakers Coordinator</i>
+                    </div>
+                    <div class = "contact-links">
+                        <!-- <a href = "mailto:@qsconference.com"><i class = "fa fa-envelope fa-2x hvr-grow"></i></a> -->
+                        <!-- <a href = "https://www.linkedin.com/in/harris-cornett" style = "padding-left: 10px;"><i class = "fa fa-linkedin fa-2x hvr-grow"></i></a> -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sponsorship -->
+            <div class="row justify-content-center text-center">
+                <div class="col-auto subteam">
+                    <h2>Sponsorship Team</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center text-center seperating-row">
+                <!-- Ewan -->
+                <div class="col-sm-4 subteam">
+                    <img src = "img/compressed-headshots/ewanbehro.jpg" class="headshot img-fluid">
+                    <div class="name">Ewan Behro</div>
+                    <div class="position">
+                        <i>Sponsorship Director</i>
+                    </div>
+                    <div class = "contact-links">
+                        <!-- <a href = "mailto:@qsconference.com"><i class = "fa fa-envelope fa-2x hvr-grow"></i></a> -->
+                        <a href = "https://www.linkedin.com/in/ewan-behro/" style = "padding-left: 10px;"><i class = "fa fa-linkedin fa-2x"></i></a>
+                    </div>
+                </div>
+                <!-- Grace -->
+                <div class="col-sm-4 subteam">
+                    <img src = "img/compressed-headshots/gracema.jpg" class="headshot img-fluid">
+                    <div class="name">Grace Ma</div>
+                    <div class="position">
+                        <i>Sponsorship Coordinator</i>
+                    </div>
+                    <div class = "contact-links">
+                        <!-- <a href = "mailto:@qsconference.com"><i class = "fa fa-envelope fa-2x hvr-grow"></i></a> -->
+                        <!-- <a href = "https://www.linkedin.com/in/harris-cornett" style = "padding-left: 10px;"><i class = "fa fa-linkedin fa-2x hvr-grow"></i></a> -->
+                    </div>
+                </div>
+                <!-- Julia -->
+                <div class="col-sm-4 subteam">
+                    <img src = "img/compressed-headshots/juliathake.jpg" class="headshot img-fluid">
+                    <div class="name">Julia Thake</div>
+                    <div class="position">
+                        <i>Sponsorship Coordinator</i>
+                    </div>
+                    <div class = "contact-links">
+                        <!-- <a href = "mailto:@qsconference.com"><i class = "fa fa-envelope fa-2x hvr-grow"></i></a> -->
+                        <!-- <a href = "https://www.linkedin.com/in/harris-cornett" style = "padding-left: 10px;"><i class = "fa fa-linkedin fa-2x hvr-grow"></i></a> -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Marketing and Media -->
+            <div class="row justify-content-center text-center">
+                <div class="col-auto subteam">
+                    <h2>Marketing and Media</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center text-center seperating-row">
+                <!-- Aerish -->
+                <div class="col-sm-4 subteam">
+                    <img src = "img/compressed-headshots/aerishaneja.jpg" class="headshot img-fluid">
+                    <div class="name">Aerish Aneja</div>
+                    <div class="position">
+                        <i>Marketing Director</i>
+                    </div>
+                    <div class = "contact-links">
+                        <!-- <a href = "mailto:@qsconference.com"><i class = "fa fa-envelope fa-2x hvr-grow"></i></a> -->
+                        <!-- <a href = "https://www.linkedin.com/in/harris-cornett" style = "padding-left: 10px;"><i class = "fa fa-linkedin fa-2x hvr-grow"></i></a> -->
+                    </div>
+                </div>
+                <!-- Cameron E -->
+                <div class="col-sm-4 subteam">
+                    <img src = "img/compressed-headshots/cameronestabrooks.jpg" class="headshot img-fluid" alt="Cameron Estabrooks - Director of IT">
+                    <div class="name">Cameron Estabrooks</div>
+                    <div class="position">
+                        <i>IT Director and Webmaster</i>
+                    </div>
+                    <div class = "contact-links">
+                        <a href = "mailto:c.estabrooks@qsconference.com"><i class = "fa fa-envelope fa-2x hvr-grow"></i></a>
+                        <a href = "https://www.linkedin.com/in/cameron-estabrooks" style = "padding-left: 10px;"><i class = "fa fa-linkedin fa-2x"></i></a>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center text-center seperating-row">
+                    <!-- Dominic -->
+                    <div class="col-sm-4 subteam">
+                        <img src = "img/compressed-headshots/missing.jpg" class="headshot img-fluid">
+                        <div class="name">Dominic Kilpatrick</div>
+                        <div class="position">
+                            <i>Marketing Coordinator</i>
+                        </div>
+                        <div class = "contact-links">
+                            <!-- <a href = "mailto:@qsconference.com"><i class = "fa fa-envelope fa-2x hvr-grow"></i></a> -->
+                            <!-- <a href = "https://www.linkedin.com/in/harris-cornett" style = "padding-left: 10px;"><i class = "fa fa-linkedin fa-2x hvr-grow"></i></a> -->
+                        </div>
+                    </div>
+                    <!-- Harmehar -->
+                    <div class="col-sm-4 subteam">
+                        <img src = "img/compressed-headshots/harmeharsingh.jpg" class="headshot img-fluid">
+                        <div class="name">Harmehar Singh</div>
+                        <div class="position">
+                            <i>IT Coordinator</i>
+                        </div>
+                        <div class = "contact-links">
+                            <!-- <a href = "mailto:@qsconference.com"><i class = "fa fa-envelope fa-2x hvr-grow"></i></a> -->
+                            <a href = "https://www.linkedin.com/in/harmehar-singh-4921b91a3" style = "padding-left: 10px;"><i class = "fa fa-linkedin fa-2x"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Operations -->
+            <div class="row justify-content-center text-center">
+                <div class="col-auto subteam">
+                    <h2>Operations</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center text-center seperating-row">
+                <!-- Cameron W -->
+                <div class="col-sm-4 subteam">
+                    <img src = "img/compressed-headshots/cameronwilson.jpg" class="headshot img-fluid">
+                    <div class="name">Cameron Wilson</div>
+                    <div class="position">
+                        <i>Events Coordinator</i>
+                    </div>
+                    <div class = "contact-links">
+                        <!-- <a href = "mailto:@qsconference.com"><i class = "fa fa-envelope fa-2x hvr-grow"></i></a> -->
+                        <!-- <a href = "https://www.linkedin.com/in/harris-cornett" style = "padding-left: 10px;"><i class = "fa fa-linkedin fa-2x hvr-grow"></i></a> -->
+                    </div>
+                </div>
+                <!-- Clarissa -->
+                <div class="col-sm-4 subteam">
+                    <img src = "img/compressed-headshots/clarissaglover.jpg" class="headshot img-fluid">
+                    <div class="name">Clarissa Glover Scanlan</div>
+                    <div class="position">
+                        <i>Finance Coordinator</i>
+                    </div>
+                    <div class = "contact-links">
+                        <!-- <a href = "mailto:@qsconference.com"><i class = "fa fa-envelope fa-2x hvr-grow"></i></a> -->
+                        <a href = "https://www.linkedin.com/in/clarissa-glover-scanlan-583488166/" style = "padding-left: 10px;"><i class = "fa fa-linkedin fa-2x"></i></a>
+                    </div>
+                </div>
+                <!-- Luke -->
+                <div class="col-sm-4 subteam">
+                    <img src = "img/compressed-headshots/lukewoolcock.jpg" class="headshot img-fluid">
+                    <div class="name">Luke Woolcock</div>
+                    <div class="position">
+                        <i>Logistics Coordinator</i>
+                    </div>
+                    <div class = "contact-links">
+                        <!-- <a href = "mailto:@qsconference.com"><i class = "fa fa-envelope fa-2x hvr-grow"></i></a> -->
+                        <!-- <a href = "https://www.linkedin.com/in/harris-cornett" style = "padding-left: 10px;"><i class = "fa fa-linkedin fa-2x hvr-grow"></i></a> -->
+                    </div>
+                </div>
+                <!-- Aaliyah -->
+                <div class="col-sm-4 subteam">
+                    <img src = "img/compressed-headshots/aaliyahchang.jpg" class="headshot img-fluid">
+                    <div class="name">Aaliyah Chang</div>
+                    <div class="position">
+                        <i>Fundraising Coordinator</i>
+                    </div>
+                    <div class = "contact-links">
+                        <!-- <a href = "mailto:@qsconference.com"><i class = "fa fa-envelope fa-2x hvr-grow"></i></a> -->
+                        <!-- <a href = "https://www.linkedin.com/in/harris-cornett" style = "padding-left: 10px;"><i class = "fa fa-linkedin fa-2x hvr-grow"></i></a> -->
+                    </div>
+                </div>
+                <!-- Connor -->
+                <div class="col-sm-4 subteam">
+                    <img src = "img/compressed-headshots/connormcallister.jpg" class="headshot img-fluid">
+                    <div class="name">Connor McAllister</div>
+                    <div class="position">
+                        <i>Delegates Coordinator</i>
+                    </div>
+                    <div class = "contact-links">
+                        <!-- <a href = "mailto:@qsconference.com"><i class = "fa fa-envelope fa-2x hvr-grow"></i></a> -->
+                        <!-- <a href = "https://www.linkedin.com/in/harris-cornett" style = "padding-left: 10px;"><i class = "fa fa-linkedin fa-2x hvr-grow"></i></a> -->
+                    </div>
+                </div>
+                <!-- Gabe -->
+                <div class="col-sm-4 subteam">
+                    <img src = "img/compressed-headshots/gabedean.jpg" class="headshot img-fluid">
+                    <div class="name">Gabe Dean</div>
+                    <div class="position">
+                        <i>Delegates Coordinator</i>
+                    </div>
+                    <div class = "contact-links">
+                        <!-- <a href = "mailto:@qsconference.com"><i class = "fa fa-envelope fa-2x hvr-grow"></i></a> -->
+                        <!-- <a href = "https://www.linkedin.com/in/harris-cornett" style = "padding-left: 10px;"><i class = "fa fa-linkedin fa-2x hvr-grow"></i></a> -->
+                    </div>
+                </div>
+                <!-- Melanie -->
+                <div class="col-sm-4 subteam">
+                    <img src = "img/compressed-headshots/melaniephillips.jpg" class="headshot img-fluid">
+                    <div class="name">Melanie Phillips</div>
+                    <div class="position">
+                        <i>First Year Rep</i>
+                    </div>
+                    <div class = "contact-links">
+                        <!-- <a href = "mailto:@qsconference.com"><i class = "fa fa-envelope fa-2x hvr-grow"></i></a> -->
+                        <a href = "https://www.linkedin.com/in/melanie-phillips-172722213" style = "padding-left: 10px;"><i class = "fa fa-linkedin fa-2x"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!------ Footer ------>
+    <footer class="footer">
+        <!-- Put inside Bootstrap container -->
+        <div class="container text-center">
+            <div>
+                Archive: <a href="../2018/">2018</a> | <a href="../2019/">2019</a> | <a href="../2020/">2020</a> | <a href="../2021/">2021</a>
+            </div>
+            <div>
+                &copy; 2021-2022 Copyright <strong>Queen's Space Conference</strong> All Rights Reserved
+            </div>
+            <div>
+                <a href="license.html">License Infomation</a> | Designed by <a href="https://www.linkedin.com/in/cameron-estabrooks/">Cameron Estabrooks</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Bootstrap 5.1.3 Javascript Plugins from CDN (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap 5.1.3 Javascript local fallback (includes Popper) -->
+    <script>
+        if (!window.bootstrap) {     // If bootstrap cannot be found, then load in local copy.
+            document.write('<script src="lib/bootstrap/js/bootstrap.bundle.min.js"> integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"<\/script>')
+        }
+    </script>
+
+    <!-- Custom Javascrip files -->
+    <script src="js/startup.js"></script>
+
+<!-- 
+    <script>
+        var nav = document.querySelector('nav');
+        var bannerImg = document.getElementById('banner');
+
+        window.addEventListener('scroll', function(){
+            if(window.pageYOffset > bannerImg.clientHeight*0.8) {
+                if(!nav.classList.contains('fade-in')){
+                    nav.classList.add('fade-in')
+                    nav.classList.remove('fade-out')
+                }
+            } else {
+                if(nav.classList.contains('fade-in')){
+                    nav.classList.add('fade-out');
+                    nav.classList.remove('fade-in');
+                }
+            }
+        })
+    </script> -->
+
+</body>
+
+</html>

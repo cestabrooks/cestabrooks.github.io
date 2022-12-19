@@ -1,0 +1,293 @@
+/*
+QSCconference.com
+
+Author: Alex McKinnon - https://mckinnon.io
+
+License: https://qsconference.com/license.html
+
+*/
+/*https://coolors.co/ba1200-9dd1f1-508aa8-26081c-c8e0f4*/
+/* -------- General -------- */
+
+/* -------- Particles.js -------- */
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+  width: 100%;
+  height: 100%;
+  /*background-color: #b61924;*/
+  /*background-image: url('../img/spacebg.jpg');*/
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+/* -------- Header - Menu -------- */
+
+#menu {
+  padding: 0 0 ;
+  height: 70px;
+  position: absolute;
+  top: 0;
+  z-index: 9999;
+
+}
+#menu h5 {
+  font-family: 'quicksand', sans-serif;
+  font-size: 25px;
+}
+
+/* -------- Landing -------- */
+
+/*
+Must Adds:
+Web particles
+
+Headers h1
+paragraph
+
+get started button
+get started button hover
+*/
+
+#landing {
+	width: 100%;
+	height: 100vh;
+	background: url(../img/spacebg.jpg) top center;
+	background-size: cover;
+	overflow: hidden;
+	position: relative;
+}
+
+@media (min-width: 1024px) {
+	#landing {
+		background-attachment:fixed;
+	}
+}
+
+#landing:before {
+  content: "";
+  background: rgba(3, 6, 17, 0.3);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#landing .landing-container {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#landing p .social {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#landing p .social a {
+  margin: 0 10px 0 0;
+  color: #fff;
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  border-radius: 13px;
+  line-height: 26px;
+  font-size: 15px;
+  text-align: center;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  vertical-align: bottom;
+}
+
+#landing .landing-items {
+
+  position: static;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  padding-top: 5%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#landing .arrow {
+  color: rgba(255, 255, 255, 0.8);
+  width: 50%;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+#landing btn-get-started {
+  font-family: "Oxygen", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  #landing .landing-items img {
+    width: 20%;
+  }
+}
+
+#landing h1 {
+	z-index: 1;
+	color: #fff;
+	font-size: 65px;
+  text-align: center;
+  font-family: 'Megrim', cursive;
+  padding: 10px 10px 10px 10px
+}
+
+@media (max-width: 768px) {
+  #landing h1 {
+    font-size: 30px;
+  }
+}
+
+/* need to do more countdown importing from the old site */
+
+#landing .countdown {
+  position: static;
+  bottom : 0px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5)
+}
+
+#landing .countdown-iframe {
+  display: block;
+}
+
+@media (max-width: 575px) {
+  #landing .countdown-iframe {
+    display:none;
+  }
+}
+
+#landing .countdown-iframe-small {
+
+}
+
+#landing .dates {
+  font-family: 'quicksand', sans-serif;
+  font-weight: 300;
+  position: absolute;
+  color: white;
+  bottom: 45px;
+  left:0;
+  right:0;
+  margin: 0 auto;
+  margin-bottom: 45px;
+}
+
+#landing .dates h2 {
+  font-size: 40px;
+}
+#landing .dates h3 {
+  font-size: 25;
+}
+@media (max-width:575px) {
+  #landing .dates h2 {
+    font-size:30px;
+  }
+
+  #landing .dates h3 {
+    font-size: 25px;
+  }
+}
+
+/* -------- Sponsors -------- */
+
+#landing .sponsors {
+  padding: 40px 0 40px 0;
+}
+
+#landing .sponsors-title {
+  text-align: center;
+  font-family: 'Megrim', sans-serif;
+  color: #fff;
+}
+
+#landing .sponsors-images-inter {
+  padding: 40px 50px 40px 50px;
+  text-align: center;
+  max-width:550px;
+}
+
+@media (max-width:575px) {
+  #landing .sponsors-images-inter {
+    width: 100%;
+    max-width:550px;
+    text-align: center;
+  }
+
+#landing .sponsors-images-extrat {
+  padding: 30px 30px 30px 30px;
+  text-align: center;
+}
+
+@media (max-width:575px) {
+  #landing .sponsors-images-extrat {
+    max-width: 90%;
+    text-align: center;
+  }
+
+#landing .sponsors-images-planet {
+  padding: 20px 30px 20px 30px;
+  text-align: center;
+  max-width: 430px;
+}
+
+@media (max-width:575px) {
+  #landing .sponsors-images-planet {
+    width: 75%;
+    max-width: 350px;
+    text-align: center;
+  }
+#landing .sponsors-images-merch {
+  padding: 20px 30px 20px 30px;
+  text-align: center;
+  max-width: 250px;
+}
+
+@media (max-width: 576px) {
+  #landing .sponsors-images-merch {
+    width: 60%;
+    max-width: 250px;
+    text-align: center;
+  }
+}  
+

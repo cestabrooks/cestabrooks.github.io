@@ -1,0 +1,54 @@
+Joshua Wade
+IT & Media Coordinator
+http://qsconference.com/
+
+Status Update, May 31 2018:
+	-Learned basic HTML and CSS
+	-Figured out how to update website using FileZila client
+	-Team member names and information updated, still need headshots and LinkedIn info.
+	 This section will need to be updated again when more exec are hired
+	-Spoke with Cory about some of my goals for the summer, he's agreed to meet at some point during the fall
+	-Updated site has not been uploaded yet, new files can be transfered when ready
+
+	Next steps:
+	 -Get general conference information (dates, locations, etc)
+	 -Update website to be "under contruction," letting users know that more information will be updated 
+	  soon.
+
+June 12 2018:
+	-fixed team member spacing
+	-updated some dates
+	-Learned about getbootstrap.com, big library of html, css and js stuff
+
+June 23 2018:
+	-reverted to older version of website for now, 2019 exec team has not been included. 
+	This Will make the website more clear until we have all the team photos and more info on this years QSC
+	-updated dates and document names
+	-Site is currently under contruction status and includes a paragraph exaplining that the site will be updated 
+	when more info is availible
+	-currently all doc links are to last years case competition/sponsor package etc.
+	-I will upload changes tomorrow, (June 24)
+
+November 18 2018:
+	-number of updates since june
+	-all team member info and pictures has been updated
+	-general site qol improvements
+	-Applications now open, apply button added under about section and to header
+	-updated speakers
+
+Jan 19, 2019:
+All applications have now closed
+
+Jan 25:
+Sponsors updated
+
+March 15:
+Last update :)
+ -2019 space game uploaded, works well.
+ -I uploaded the progression map to the drive if anyone wants to check it out.
+ -Conference was a huge success, super fun, everything worked out without a hitch.
+ -Conference happened a month and a bit ago, havent updated the website since. 
+ -started working on next years IT transition doc, you're the qsc 2020 IT coordinator, 
+   it should be done by the time you read this.
+ -I'll also try to put the website on github (probably should have done this a while ago)
+ 

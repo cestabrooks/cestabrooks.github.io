@@ -62,6 +62,35 @@ function scrollToTargetIDAdjusted(href){
     });
 }
 
+// Adjusts the carousel's multi-item representation (depending on screen width)
+function adjustCarousel() {
+    // number of slides to show per carousel item
+    var numSlides = 1
+
+    // medium and large screen
+    if( window.innerWidth >= 768 && window.innerWidth < 1200) {
+        numSlides = 2
+    // x-large and greater screens
+    } else if( window.innerWidth >= 1200) {
+        numSlides = 3
+    }
+    
+    // manually add next slides to show alongside the current carousel item
+    let carouselItems = document.querySelectorAll('.carousel .carousel-item')
+    carouselItems.forEach((el) => {
+        let next = el.nextElementSibling
+        for (var i=1; i<numSlides; i++) {
+            if (!next) {
+                // wrap carousel by using first child
+                next = carouselItems[0]
+            }
+            let cloneChild = next.cloneNode(true)
+            el.appendChild(cloneChild.children[0])
+
+            next = next.nextElementSibling
+        }
+    })
+}
 
 
 // Wait until the 'DOMContentLoaded' event fires, which indicates the webpage has been completely loaded.
@@ -80,6 +109,11 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     }
 
+    // addEventListener( 'resize', adjustCarousel )
+    // adjustCarousel()
 
-});    
+    // Setting up Bootstrap tooltips
+    // const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    // const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
+});

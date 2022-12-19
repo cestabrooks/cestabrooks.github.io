@@ -14,10 +14,13 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <!-- Google Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900|Caveat">
     
     <!-- Font Awesome 4.7.0 (used for Email and LinkedIn icons) -->
     <link href="lib/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Video JS -->
+    <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
 
     <title>Cameron Estabrooks Porfolio</title>
     <link rel="icon" type="image/x-icon" href="img/logo/logo.ico" />
@@ -46,14 +49,15 @@
                 <ul class="navbar-nav ms-auto">
 
                     <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
                         <a href="#portfolio-preview" class="nav-link">Portfolio</a>
                     </li>
                     <li class="nav-item">
                         <a href="/resume.pdf" class="nav-link">Resume</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link">About</a>
-                    </li>
+
                 </ul>
             </div>
         </div>
@@ -64,15 +68,18 @@
     <section id="banner" style="overflow: hidden;">
         <div class="banner-image d-flex align-items-center" >
             <video style="z-index: -1; object-fit: cover; object-position: 0 0; height: 100vh; width: 100vw;" playsinline autoplay muted loop>
-                <source src="vid/coding-background.mp4" type="video/mp4"  />
+                <source src="/vid/coding-background.mp4" type="video/mp4"  />
             </video>
 
             <div class="text-center vw-100" style="position: absolute;">
                 <h1>Cameron Estabrooks</h1>
-                <h2>Digital Portfolio</h2>            
+                <h2>Personal Website</h2>            
             </div>
             <div id="about-arrow" class="fixed-bottom text-center" style="position: absolute; vertical-align: bottom;">
-                <a href="#about"><i class="fa fa-angle-down fa-3x" style="color: white;"></i></a>
+                <p style="font-family:'Caveat', 'Arial Narrow', Arial, sans-serif; font-size: xx-large; transform: rotate(-7deg);">
+                    <a style="color: white;" href="#portfolio-preview">Skip to portfolio</a>
+                </p>
+                <a href="#portfolio-preview"><i class="fa fa-angle-down fa-3x" style="color: white;"></i></a>
             </div>
         </div>
     </section>
@@ -80,7 +87,6 @@
 
     <!-- About -->
     <section id="about" >
-        <div class="about-background"></div>
         <div class="container-fluid padded">
             <div class="row">
                 <div class="col">
@@ -103,9 +109,9 @@
                         I'm a fourth year Computer Engineering student currently on internship at
                         <a href="https://www.youtube.com/watch?v=rAezZ0_tHvk">Autodesk</a>
                         as a Software Developer. I attend Queen's University, located in beautiful 
-                        Kingston, ON, Canada.<br>
+                        Kingston, ON, Canada.<br><br>
 
-                        I am seeking opportunities for the summer of 2023. <br>
+                        I am seeking opportunities for the summer of 2023. <br><br>
 
                         Since you can already see my professional experience on my 
                         <a href="/resume.pdf">resume</a>, let's have some fun. I'm going to 
@@ -121,8 +127,286 @@
                     </p>
                 </div>
             </div>
-          </div>
+        </div>
     </section>
+
+
+    <!-- Portfolio -->
+    <section id="portfolio-preview" style="padding: 30pt 0pt 80pt 0pt;">
+        <div class="padded">
+            <h1>Portfolio</h1>
+        </div>
+
+        <!-- Portfolio Grid -->
+        <div class="row mx-auto my-auto justify-content-center">
+            <div class="col-xs-11 col-md-10 d-flex flex-wrap">
+                <div class="col-md-6 col-lg-6 col-xl-4 col-xxl-4 p-3">
+                    <div class="card h-100 border-0 p-3" 
+                    data-bs-toggle="tooltip" data-bs-placement="top"
+                    data-bs-custom-class="custom-tooltip"
+                    data-bs-title="Skills developed: Java, C++, Git, Serial Communication with Hardware">
+
+                        <div class="card-img">
+                            <img src="img/portfolio-preview/cpr-computer-and-dummy.jpg" class="img-fluid">
+                        </div>
+                        <div class="card-title">CPR Feedback System</div>
+                        <p class="card-text">
+                            Programmed application from scratch that monitors CPR 
+                            performance and provides feedback.
+                        </p>
+                        <div class="d-flex flex-wrap pb-4">
+                            <div class="skill-tag">Java</div>
+                            <div class="skill-tag">C++</div>
+                            <div class="skill-tag">Git </div>
+                            <div class="skill-tag">Serial Communication</div>   
+                            <div class="skill-tag">Hardware Interfacing</div>                                       
+                        </div>
+                        <div class="card-footer mx-auto mt-auto">
+                            <button type="button" class="btn btn-primary mx-auto" data-bs-toggle="modal" data-bs-target="#cpr-modal">
+                                Learn more
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-4 col-xxl-4 p-3">
+                    <div class="card h-100 border-0 p-3" 
+                    data-bs-toggle="tooltip" data-bs-placement="top"
+                    data-bs-custom-class="custom-tooltip"
+                    data-bs-title="Skills developed: Python, AI, Quantum Computing, Pennylane, Qiskit">
+
+                        <div class="card-img">
+                            <img src="img/portfolio-preview/qgan-results.jpg" class="img-fluid">
+                        </div>
+                        <div class="card-title">Quantum GAN</div>
+                        <p class="card-text">
+                            Created a machine learning model for quantum computers 
+                            that is capable of generating handwritten digits.
+                        </p>
+                        <div class="d-flex flex-wrap pb-4">
+                            <div class="skill-tag">Python</div>
+                            <div class="skill-tag">Machine Learning</div>
+                            <div class="skill-tag">Quantum Computing</div>
+                            <div class="skill-tag">Qiskit</div>   
+                            <div class="skill-tag">Pennylane</div>                                       
+                        </div>
+                        <div class="card-footer mx-auto mt-auto">
+                            <a href="/portfolio/QGAN_CUCAI.pdf" class="btn btn-primary mx-auto" role="button">
+                                Learn more
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-4 col-xxl-4 p-3">
+                    <div class="card h-100 border-0 p-3"
+                    data-bs-toggle="tooltip" data-bs-placement="top"
+                    data-bs-custom-class="custom-tooltip"
+                    data-bs-title="Skills developed: C++, QML, Path Generation">
+                    
+                        <div class="card-img">
+                            <img src="img/portfolio-preview/run-generator.jpg" class="img-fluid">
+                        </div>
+                        <div class="card-title">Run Generator</div>
+                        <p class="card-text">
+                            Designed application that generates running routes 
+                            based on user specifications (ex. distance, time, 
+                            scenery preference, etc.)
+                        </p>
+                        <div class="d-flex flex-wrap pb-4">
+                            <div class="skill-tag">C++</div>
+                            <div class="skill-tag">QML</div>
+                            <div class="skill-tag">Path Generation</div>                                   
+                        </div>
+                        <div class="card-footer mx-auto mt-auto">
+                            <button type="button" class="btn btn-primary mx-auto" data-bs-toggle="modal" data-bs-target="#run-modal">
+                                Learn more
+                            </button>
+                        </div>
+                        <!-- <a href="/portfolio/" class="btn btn-primary mx-auto" role="button">
+                            Learn more
+                        </a> -->
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-4 col-xxl-4 p-3">
+                    <div class="card h-100 border-0 p-3"
+                    data-bs-toggle="tooltip" data-bs-placement="top"
+                    data-bs-custom-class="custom-tooltip"
+                    data-bs-title="Skills developed: Python, ROS, Path Finding">
+                    
+                        <div class="card-img">
+                            <img src="img/portfolio-preview/qset-rover.jpg" class="img-fluid">
+                        </div>
+                        <div class="card-title">Rover Path Finding</div>
+                        <p class="card-text">
+                            Created algorithm for a space rover to navigate 
+                            unfamiliar terrain at the University Rover Challenge
+                            in Utah.
+                        </p>
+                        <div class="d-flex flex-wrap pb-4">
+                            <div class="skill-tag">Python</div>
+                            <div class="skill-tag">ROS</div>
+                            <div class="skill-tag">Docker</div>
+                            <div class="skill-tag">Path Finding</div>                                   
+                        </div> 
+                        <div class="card-footer mx-auto mt-auto">
+                            <button type="button" class="btn btn-primary mx-auto" data-bs-toggle="modal" data-bs-target="#rover-modal">
+                                Learn more
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-4 col-xxl-4 p-3">
+                    <div href="/portfolio/qsc-website/" class="card h-100 border-0 p-3"
+                    data-bs-toggle="tooltip" data-bs-placement="top"
+                    data-bs-custom-class="custom-tooltip"
+                    data-bs-title="Skills developed: HTML, CSS, Javascript, Bootstrap">
+
+                        <div class="card-img">
+                            <img src="img/portfolio-preview/qsc-website.jpg" class="img-fluid">
+                        </div>
+
+                        <div class="card-title">Conference Website</div>
+                        <p class="card-text">
+                            Created website for the Queen's Space Conference as
+                            the Webmaster and Director of IT.
+                        </p>
+                        <div class="d-flex flex-wrap pb-4">
+                            <div class="skill-tag">HTML</div>
+                            <div class="skill-tag">CSS</div>
+                            <div class="skill-tag">Javascript</div>
+                            <div class="skill-tag">Bootstrap 5</div>                                   
+                        </div> 
+                        <div class="card-footer mx-auto mt-auto">
+                            <a href="/portfolio/qsc-website/" class="btn btn-primary mx-auto" role="button">
+                                View it
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Detailed Modals -->
+        <div id="cpr-modal" class="modal fade dark"  data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5">CPR Feedback System</h1>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" onclick="document.getElementById('cpr-video').player.pause()" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        <b>Overview:</b><br>
+                        - Programmed system from scratch that provides live feedback about CPR 
+                        performance.
+                        <br>
+                        - Used to improve CPR training for over 400 healthcare professionals
+                        and critical care nurses.
+                        <br>
+                        - Worked on a student-led team under the supervision of researchers 
+                        from one of Canada’s top research hospitals, the Kingston Health 
+                        Sciences Centre.
+                        <br><br>
+                        <b>Demo Video:</b>
+                    </p>
+                    <video
+                        id="cpr-video"
+                        class="video-js vjs-16-9"
+                        controls
+                        preload="auto"
+                        poster="img/portfolio-preview/cpr-computer-and-dummy.jpg"
+                        data-setup="{}"
+                    >
+                        <source src="/portfolio/cpr-demo-video.mp4" type="video/mp4" />
+                        <p class="vjs-no-js">
+                            To view this video please enable JavaScript, and consider upgrading to a
+                            web browser that
+                            <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                        </p>
+                    </video>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div id="run-modal" class="modal fade dark"  data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5">Run Generator</h1>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" onclick="document.getElementById('rover-video').player.pause()" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        <b>Overview:</b><br>
+                        - Programmed application that creates random running routes
+                        based on user specifications (ex. time, distance, scenery preference,
+                        incline, etc.)
+                        <br>
+                        - Created path generation algorithm where each intersection is a node,
+                        and the stretch of road between nodes (the edges) are assigned different weights 
+                        based on user input.
+                        <br><br>
+                        <b>Minimum Viable Product Demo:</b>
+                    </p>
+                    <video
+                        id="rover-video"
+                        class="video-js vjs-16-9"
+                        controls
+                        preload="auto"
+                        poster="img/portfolio-preview/run-generator.jpg"
+                        data-setup="{}"
+                    >
+                        <source src="/portfolio/running-route-demo.mp4" type="video/mp4" />
+                        <p class="vjs-no-js">
+                            To view this video please enable JavaScript, and consider upgrading to a
+                            web browser that
+                            <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                        </p>
+                    </video>
+                </div>
+            </div>
+            </div>
+        </div>         
+
+        <div id="rover-modal" class="modal fade dark"  data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5">Rover Path Finding</h1>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" onclick="document.getElementById('rover-video').player.pause()" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        <b>Overview:</b><br>
+                        - Designed software for a rover using ROS to autonomously navigate 
+                        terrain at the University Rover Challenge in Utah.
+                        <br>
+                        - Used Gazebo 3D Simulator with ODE Physics Engine to test rover.
+                        <br><br>
+                        <b>Demo Test Video:</b>
+                    </p>
+                    <video
+                        id="rover-video"
+                        class="video-js vjs-16-9"
+                        controls
+                        preload="auto"
+                        poster="img/portfolio-preview/qset-rover.jpg"
+                        data-setup="{}"
+                    >
+                        <source src="/portfolio/qset-rover-testD.mp4" type="video/mp4" />
+                        <p class="vjs-no-js">
+                            To view this video please enable JavaScript, and consider upgrading to a
+                            web browser that
+                            <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                        </p>
+                    </video>
+                </div>
+            </div>
+            </div>
+        </div> 
+
+    </section>
+
 
 
     <!------ Footer ------>
@@ -146,6 +430,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" 
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" 
         crossorigin="anonymous"></script>
+
+    <!-- Video JS -->
+    <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
 
 </body>
 
